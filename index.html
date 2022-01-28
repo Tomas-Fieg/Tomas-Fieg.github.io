@@ -1,0 +1,123 @@
+<!-- 
+	CSI 3125 Lab01 
+	Tomas Fieg #300077145 
+	Apart of group 28 but am doing the work
+	seperately because I joined the group
+	after they were already finished lab 1. 
+-->
+
+
+<!-- 
+This little bit of code started with https://www.wikihow.com/Create-a-Questionnaire-in-HTML and got modified, by then using info from w3schools.com to continue.
+This is an UGLY survey....  PLEASE MODIFY IT!
+Caroline Barrière
+May 2020
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<!-- IMPORTANT to use a CSS file - external -->
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Best Buy Questionnaire</title>
+  </head>
+  
+  <body>
+	<h3> Best Buy Website Survey</h3>
+	<form id="myform" method = "post"  action = "https://www.google.com" >
+
+		<!-- Choose a website to evaluate -->
+		<h2> What do you think of the UI in this <a href="https://www.bestbuy.ca/en-ca"> Best Buy</a> site?</h2>	
+		
+	
+		<!-- You should make your image clickable  DONE-->
+		<a href="https://www.bestbuy.ca/en-ca"> <img src="images/Best-Buy-FrontPage.JPG" alt="https://www.bestbuy.ca/en-ca" width="450" height="300"> </a>
+	
+		<br> <br> 
+
+		<!-- Text-type Question  -->
+		<div class="question">
+			<h2> Personal Information </h2>
+			<p>First name: <input type="text" name="firstname"></p>
+			<p>Last name: <input type="text" name="lastname"></p>
+			<p>Email address: <input type="text" name="lastname"></p>
+		</div>	
+		
+		<br> <br> 
+
+		<!-- Two Single Choice Questions (a list) -->
+		<div class="question">
+			<h2> What is your favorite feature?<h2>
+			<select id="favorite">
+				<option value="Clarity" selected="selected"> Clarity </option>
+				<option value="SearchBar"> Search Bar</option>
+				<option value="ColourScheme"> Colour Scheme </option>
+				<option value="Other"> Other </option>
+			</select>	
+		</div>
+
+		<br> <br> 
+
+		<!-- Select Several Boxes Question -->
+		<div class="question">
+			<h2> Select all the features that you like about this website. </h2>
+			
+			<input type="checkbox" name="Color" value="Imagery"> Imagery<br>
+			<input type="checkbox" name="Color" value="EasyOfUse"> Ease of use<br>
+			<input type="checkbox" name="Color" value="Theme"> Theme <br>
+		</div>
+		
+		<br> <br> 
+
+		<!-- Radio Button  -->
+		<div class="question">
+			<h2> Would you like to recieve best buy promotions through email? </h2>
+			<br> <input name = "radioButton" type = "radio" value = "Yes"> Yes </br>
+			<label> <input name = "radioButton" type = "radio" value = "No"> No </label>
+		</div>
+
+		<br> <br> 
+
+		<!-- Radio Button  -->
+		<div class="question">
+			<h2> Would you like to recieve emails about other surveys that you can participate in? </h2>
+			<br> <input name = "radioButton" type = "radio" value = "Yes"> Yes </br>
+			<label> <input name = "radioButton" type = "radio" value = "No"> No </label>
+		</div>
+	
+		<br> <br> 
+
+		<!-- Radio Button  -->
+		<div class="question">
+			<h2> Do you like this survey? </h2>
+			<br> <input name = "radioButton" type = "radio" value = "Yes"> Yes </br>
+			<label> <input name = "radioButton" type = "radio" value = "No"> No </label>
+		</div>
+
+		<br> <br> 
+
+		<!-- Space to write down comments -->
+		<h3>
+			Comments:<br>
+			<textarea rows="5" cols="74"></textarea> 
+		</h3>
+
+		<br>
+		<!-- Button to Submit or reset questionnaire -->
+		<h4> 
+		<input class = "sub" type = "submit" value = "Submit">
+		<input class = "res" type = "reset" value = "Clear"> 	
+		</h4>
+		
+	 
+
+
+			
+		<p id="signature"> Website designed by Tomas F Fieg #300071145</p>	
+		
+	</form>
+  </body>
+</html> 
+
+
